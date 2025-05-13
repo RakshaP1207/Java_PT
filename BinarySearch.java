@@ -23,7 +23,7 @@ public class BinarySearch {
                 
         }
     }
-        return 0;
+        return -1;
 }
     
 
@@ -31,10 +31,18 @@ public static void main(String[] args){
 int[] arr={5,9,17,23,25,45,59,63,72,89};
 int l=0;
 int r=arr.length-1;
-int ele=59;
+int ele=100;
 BinarySearch b=new BinarySearch();
-System.out.println(b.binarysearch(arr,l,r,ele));
+int res=b.binarysearch(arr,l,r,ele);
+if(res!=-1){
+    System.out.println("Element found");
+}
+else{
+    System.out.println("Element not found");
+}
+}
 }
 
+
     
-}
+
